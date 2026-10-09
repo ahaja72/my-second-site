@@ -32,6 +32,8 @@ export default function Home() {
         >
           안녕하세요,
           <br />
+          반갑습니다!
+          <br />
           <span style={{ color: "#00897b" }}>Ai 에이전트 강사</span>
           <br />
           <span style={{ color: "#00897b" }}>노현희</span> 입니다
