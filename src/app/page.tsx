@@ -64,6 +64,7 @@ export default function Home() {
           <span style={{ color: "#1e3a8a", fontWeight: "700" }}>함께 만들어봐요.</span>
         </p>
       </div>
+      <p style={{ color: "#C84726" }}>[오늘 처음 인터넷에 사이트를 올렸어요!]</p>
     </div>
   );
 }
