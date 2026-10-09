@@ -60,7 +60,7 @@ export default function Home() {
             fontSize: "clamp(1rem, 2.5vw, 1.2rem)",
           }}
         >
-          Ai로 뭘 만들고 싶으신가요?{" "}
+          당신에게 Ai는 무엇입니까?{" "}
           <span style={{ color: "#1e3a8a", fontWeight: "700" }}>함께 만들어봐요.</span>
         </p>
       </div>
