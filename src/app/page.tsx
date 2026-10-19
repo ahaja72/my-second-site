@@ -30,13 +30,13 @@ export default function Home() {
             fontSize: "clamp(1.8rem, 4.5vw, 3.5rem)",
           }}
         >
-          안녕하세요,
+          Ai로 뭘 만들고 싶으십니까?
           <br />
-          반갑습니다!
-          <br />
-          <span style={{ color: "#00897b" }}>Ai 에이전트 강사</span>
-          <br />
-          <span style={{ color: "#00897b" }}>노현희</span> 입니다
+          <span style={{ fontSize: "clamp(1.3rem, 3vw, 2.4rem)" }}>
+            <span style={{ color: "#00897b" }}>Ai 에이전트 강사</span>
+            <br />
+            <span style={{ color: "#00897b" }}>노현희</span> 입니다
+          </span>
         </h1>
 
         {/* 동그란 프로필 사진 */}
@@ -64,7 +64,7 @@ export default function Home() {
           <span style={{ color: "#1e3a8a", fontWeight: "700" }}>함께 만들어봐요.</span>
         </p>
       </div>
-      <p style={{ color: "#C84726" }}>[오늘 처음 인터넷에 사이트를 올렸어요!]</p>
+
     </div>
   );
 }
