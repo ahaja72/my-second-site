@@ -94,17 +94,95 @@ export default function Home() {
           }}
         />
 
-        <p
-          className="text-center"
+        {/* 강사 소개 및 경력 카드 */}
+        <div
           style={{
-            color: "#64748b",
-            fontSize: "clamp(0.85rem, 2vw, 0.95rem)",
-            fontWeight: "500",
-            marginTop: "-8px",
+            backgroundColor: "#f8fafc",
+            borderRadius: "16px",
+            padding: "20px 24px",
+            border: "1px solid #e2e8f0",
+            width: "100%",
+            maxWidth: "520px",
+            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.04)",
           }}
         >
-          강사프로필 : 노현희 Ai 에이전트 강사
-        </p>
+          <div style={{ textAlign: "center", marginBottom: "16px" }}>
+            <span
+              style={{
+                display: "inline-block",
+                backgroundColor: "#e8ede2",
+                color: "#556b2f",
+                fontWeight: "700",
+                fontSize: "0.85rem",
+                padding: "4px 12px",
+                borderRadius: "20px",
+                marginBottom: "8px",
+              }}
+            >
+              Instructor Profile
+            </span>
+            <h3
+              style={{
+                fontSize: "1.3rem",
+                fontWeight: "800",
+                color: "#1e293b",
+                margin: "4px 0",
+              }}
+            >
+              노현희 <span style={{ fontSize: "1rem", fontWeight: "600", color: "#64748b" }}>Ai 에이전트 전문 강사</span>
+            </h3>
+            <p style={{ fontSize: "0.9rem", color: "#475569", margin: "4px 0 0" }}>
+              실무와 일상에 바로 쓰는 맞춤형 생성형 AI 활용법을 전합니다.
+            </p>
+          </div>
+
+          <div
+            style={{
+              borderTop: "1px dashed #cbd5e1",
+              paddingTop: "14px",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "0.85rem",
+                fontWeight: "700",
+                color: "#556b2f",
+                marginBottom: "8px",
+              }}
+            >
+              주요 강의 및 활동 경력
+            </p>
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                display: "flex",
+                flexDirection: "column",
+                gap: "8px",
+                fontSize: "0.88rem",
+                color: "#334155",
+              }}
+            >
+              <li style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
+                <span style={{ color: "#556b2f", fontWeight: "bold" }}>✔</span>
+                <span>공공기관 및 지자체 대상 생성형 AI & 챗GPT 실무 역량 강화 교육</span>
+              </li>
+              <li style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
+                <span style={{ color: "#556b2f", fontWeight: "bold" }}>✔</span>
+                <span>기업 맞춤형 AI 업무 자동화 및 프롬프트 엔지니어링 특강</span>
+              </li>
+              <li style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
+                <span style={{ color: "#556b2f", fontWeight: "bold" }}>✔</span>
+                <span>중장년·시니어 디지털 리터러시 & AI 에이전트 활용 교육</span>
+              </li>
+              <li style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
+                <span style={{ color: "#556b2f", fontWeight: "bold" }}>✔</span>
+                <span>1인 기업가·강사를 위한 AI 콘텐츠 제작 및 브랜딩 워크숍</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       {/* 문의하기 칸 */}
