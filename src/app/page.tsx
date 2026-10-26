@@ -94,63 +94,85 @@ export default function Home() {
           }}
         />
 
-        {/* 강사 소개 및 경력 카드 */}
+        {/* 강사 소개 및 경력 카드 (구분되는 배경과 디자인 적용) */}
         <div
           style={{
-            backgroundColor: "#f8fafc",
-            borderRadius: "16px",
-            padding: "20px 24px",
-            border: "1px solid #e2e8f0",
+            backgroundColor: "#ffffff",
+            borderRadius: "20px",
+            padding: "28px 30px",
+            border: "2px solid #e0e7ff",
             width: "100%",
-            maxWidth: "520px",
-            boxShadow: "0 2px 10px rgba(0, 0, 0, 0.04)",
+            maxWidth: "600px",
+            boxShadow: "0 10px 30px -5px rgba(56, 189, 248, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+            position: "relative",
+            overflow: "hidden",
           }}
         >
-          <div style={{ textAlign: "center", marginBottom: "16px" }}>
+          {/* 상단 포인트 컬러 바 */}
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "5px",
+              background: "linear-gradient(90deg, #e11d48, #38bdf8)",
+            }}
+          />
+
+          <div style={{ textAlign: "center", marginBottom: "20px" }}>
             <span
               style={{
                 display: "inline-block",
-                backgroundColor: "#e8ede2",
-                color: "#556b2f",
+                backgroundColor: "#eff6ff",
+                color: "#0284c7",
+                border: "1px solid #bfdbfe",
                 fontWeight: "700",
-                fontSize: "0.85rem",
-                padding: "4px 12px",
+                fontSize: "0.82rem",
+                padding: "4px 14px",
                 borderRadius: "20px",
-                marginBottom: "8px",
+                marginBottom: "10px",
+                letterSpacing: "0.5px",
               }}
             >
-              Instructor Profile
+              PROFILE
             </span>
             <h3
               style={{
-                fontSize: "1.3rem",
+                fontSize: "1.35rem",
                 fontWeight: "800",
-                color: "#1e293b",
+                color: "#0f172a",
                 margin: "4px 0",
               }}
             >
-              노현희 <span style={{ fontSize: "1rem", fontWeight: "600", color: "#64748b" }}>Ai 에이전트 전문 강사</span>
+              노현희 <span style={{ fontSize: "1.05rem", fontWeight: "600", color: "#0284c7" }}>Ai 에이전트 전문 강사</span>
             </h3>
-            <p style={{ fontSize: "0.9rem", color: "#475569", margin: "4px 0 0" }}>
+            <p style={{ fontSize: "0.92rem", color: "#475569", margin: "6px 0 0", wordBreak: "keep-all" }}>
               실무와 일상에 바로 쓰는 맞춤형 생성형 AI 활용법을 전합니다.
             </p>
           </div>
 
           <div
             style={{
-              borderTop: "1px dashed #cbd5e1",
-              paddingTop: "14px",
+              borderTop: "2px dashed #e2e8f0",
+              paddingTop: "18px",
+              backgroundColor: "#f8fafc",
+              borderRadius: "12px",
+              padding: "16px 18px",
             }}
           >
             <p
               style={{
-                fontSize: "0.85rem",
+                fontSize: "0.88rem",
                 fontWeight: "700",
-                color: "#556b2f",
-                marginBottom: "8px",
+                color: "#1e293b",
+                marginBottom: "12px",
+                display: "flex",
+                alignItems: "center",
+                gap: "6px",
               }}
             >
-              주요 강의 및 활동 경력
+              <span style={{ color: "#38bdf8" }}>✦</span> 주요 강의 및 활동 경력
             </p>
             <ul
               style={{
@@ -159,25 +181,25 @@ export default function Home() {
                 margin: 0,
                 display: "flex",
                 flexDirection: "column",
-                gap: "8px",
+                gap: "10px",
                 fontSize: "0.88rem",
                 color: "#334155",
               }}
             >
-              <li style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
-                <span style={{ color: "#556b2f", fontWeight: "bold" }}>✔</span>
+              <li style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
+                <span style={{ color: "#0284c7", fontWeight: "bold" }}>✔</span>
                 <span>공공기관 및 지자체 대상 생성형 AI & 챗GPT 실무 역량 강화 교육</span>
               </li>
-              <li style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
-                <span style={{ color: "#556b2f", fontWeight: "bold" }}>✔</span>
+              <li style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
+                <span style={{ color: "#0284c7", fontWeight: "bold" }}>✔</span>
                 <span>기업 맞춤형 AI 업무 자동화 및 프롬프트 엔지니어링 특강</span>
               </li>
-              <li style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
-                <span style={{ color: "#556b2f", fontWeight: "bold" }}>✔</span>
+              <li style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
+                <span style={{ color: "#0284c7", fontWeight: "bold" }}>✔</span>
                 <span>중장년·시니어 디지털 리터러시 & AI 에이전트 활용 교육</span>
               </li>
-              <li style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
-                <span style={{ color: "#556b2f", fontWeight: "bold" }}>✔</span>
+              <li style={{ display: "flex", alignItems: "flex-start", gap: "10px" }}>
+                <span style={{ color: "#0284c7", fontWeight: "bold" }}>✔</span>
                 <span>1인 기업가·강사를 위한 AI 콘텐츠 제작 및 브랜딩 워크숍</span>
               </li>
             </ul>
