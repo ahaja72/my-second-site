@@ -70,14 +70,14 @@ export default function Home() {
         <h1
           className="font-extrabold text-center leading-tight"
           style={{
-            fontSize: "clamp(1.8rem, 4.5vw, 3.2rem)",
+            fontSize: "clamp(2rem, 5vw, 3.6rem)",
             fontFamily: "Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif",
+            letterSpacing: "-0.5px",
           }}
         >
-          <span style={{ color: "#e11d48" }}>History</span>
-          <span style={{ color: "#334155" }}>가</span>
+          <span style={{ color: "#800020" }}>My History</span>
           <br />
-          <span style={{ color: "#38bdf8" }}>Ai Story가 되다</span>
+          <span style={{ color: "#4a2c11" }}>AI HiStory</span>
         </h1>
 
         {/* 동그란 프로필 사진 */}
