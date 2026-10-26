@@ -139,13 +139,22 @@ export default function Home() {
             </span>
             <h3
               style={{
-                fontSize: "1.35rem",
+                fontSize: "1.45rem",
                 fontWeight: "800",
                 color: "#0f172a",
                 margin: "4px 0",
+                letterSpacing: "0.5px",
               }}
             >
-              노현희 <span style={{ fontSize: "1.05rem", fontWeight: "600", color: "#0284c7" }}>Ai 에이전트 전문 강사</span>
+              <span>
+                <span style={{ color: "#e11d48" }}>m</span>
+                <span style={{ color: "#f97316" }}>i</span>
+                <span style={{ color: "#eab308" }}>s</span>
+                <span style={{ color: "#10b981" }}>s</span>
+                <span style={{ color: "#06b6d4" }}>n</span>
+                <span style={{ color: "#8b5cf6" }}>o</span>
+              </span>{" "}
+              <span style={{ fontSize: "1.05rem", fontWeight: "600", color: "#0284c7" }}>Ai 에이전트 전문 강사</span>
             </h3>
             <p style={{ fontSize: "0.92rem", color: "#475569", margin: "6px 0 0", wordBreak: "keep-all" }}>
               실무와 일상에 바로 쓰는 맞춤형 생성형 AI 활용법을 전합니다.
