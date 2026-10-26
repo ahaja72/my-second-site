@@ -70,17 +70,12 @@ export default function Home() {
         <h1
           className="font-extrabold text-center leading-tight"
           style={{
-            color: "#1e293b",
-            fontSize: "clamp(1.8rem, 4.5vw, 3.5rem)",
+            color: "#556b2f",
+            fontSize: "clamp(1.8rem, 4.5vw, 3.2rem)",
+            fontFamily: "Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif",
           }}
         >
-          Ai로 뭘 만들고 싶으십니까?
-          <br />
-          <span style={{ fontSize: "clamp(1.3rem, 3vw, 2.4rem)" }}>
-            <span style={{ color: "#00897b" }}>Ai 에이전트 강사</span>
-            <br />
-            <span style={{ color: "#00897b" }}>노현희</span> 입니다
-          </span>
+          나의 History가 모여 Ai History가 됩니다
         </h1>
 
         {/* 동그란 프로필 사진 */}
@@ -92,21 +87,10 @@ export default function Home() {
             height: "clamp(120px, 22vw, 200px)",
             borderRadius: "50%",
             objectFit: "cover",
-            border: "4px solid #1e3a8a",
-            boxShadow: "0 4px 20px rgba(30, 58, 138, 0.25)",
+            border: "4px solid #556b2f",
+            boxShadow: "0 4px 20px rgba(85, 107, 47, 0.25)",
           }}
         />
-
-        <p
-          className="text-center"
-          style={{
-            color: "#334155",
-            fontSize: "clamp(1rem, 2.5vw, 1.2rem)",
-          }}
-        >
-          당신에게 Ai는 무엇입니까?{" "}
-          <span style={{ color: "#1e3a8a", fontWeight: "700" }}>함께 만들어봐요.</span>
-        </p>
       </div>
 
       {/* 문의하기 칸 */}
