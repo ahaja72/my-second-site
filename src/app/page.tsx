@@ -93,6 +93,18 @@ export default function Home() {
             boxShadow: "0 4px 20px rgba(85, 107, 47, 0.25)",
           }}
         />
+
+        <p
+          className="text-center"
+          style={{
+            color: "#64748b",
+            fontSize: "clamp(0.85rem, 2vw, 0.95rem)",
+            fontWeight: "500",
+            marginTop: "-8px",
+          }}
+        >
+          강사프로필 : 노현희 Ai 에이전트 강사
+        </p>
       </div>
 
       {/* 문의하기 칸 */}
