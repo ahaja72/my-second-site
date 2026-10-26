@@ -75,7 +75,9 @@ export default function Home() {
             fontFamily: "Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif",
           }}
         >
-          나의 History가 모여 Ai History가 됩니다
+          나의 History
+          <br />
+          Ai History가 됩니다
         </h1>
 
         {/* 동그란 프로필 사진 */}
