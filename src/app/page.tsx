@@ -129,7 +129,7 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          문의하기
+          무엇이 궁금하세요?
         </h2>
 
         <form
@@ -151,7 +151,7 @@ export default function Home() {
                 fontSize: "0.95rem",
               }}
             >
-              이름
+              당신은 누구십니까?
             </label>
             <input
               id="name"
@@ -184,13 +184,13 @@ export default function Home() {
                 fontSize: "0.95rem",
               }}
             >
-              하고 싶은 말
+              알고 싶어요
             </label>
             <textarea
               id="message"
               required
               rows={4}
-              placeholder="하고 싶은 말을 입력하세요"
+              placeholder="알고 싶은 내용을 입력하세요"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               style={{
