@@ -227,29 +227,29 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 문의하기 칸 */}
+      {/* 문의하기 칸 — 상단 카드와 동일한 전체 크기(720px) 및 규격 */}
       <div
         style={{
           backgroundColor: "#ffffff",
-          borderRadius: "20px",
-          border: "2px solid #e0e7ff",
-          boxShadow: "0 10px 30px -5px rgba(56, 189, 248, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-          padding: "clamp(32px, 6vw, 44px) clamp(24px, 6vw, 50px)",
+          borderRadius: "24px",
+          boxShadow: "0 8px 40px rgba(30, 58, 138, 0.15)",
+          padding: "clamp(48px, 8vw, 80px) clamp(32px, 8vw, 100px)",
           width: "100%",
-          maxWidth: "600px",
+          maxWidth: "720px",
           fontFamily: "Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif",
+          boxSizing: "border-box",
           position: "relative",
           overflow: "hidden",
         }}
       >
-        {/* 상단 포인트 컬러 바 (프로필과 동일하게 통일) */}
+        {/* 상단 포인트 컬러 바 */}
         <div
           style={{
             position: "absolute",
             top: 0,
             left: 0,
             right: 0,
-            height: "5px",
+            height: "6px",
             background: "linear-gradient(90deg, #e11d48, #38bdf8)",
           }}
         />
