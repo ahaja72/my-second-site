@@ -99,8 +99,8 @@ export default function Home() {
             height: "clamp(120px, 22vw, 200px)",
             borderRadius: "50%",
             objectFit: "cover",
-            border: "4px solid #556b2f",
-            boxShadow: "0 4px 20px rgba(85, 107, 47, 0.25)",
+            border: "4.5px solid #eab308",
+            boxShadow: "0 6px 24px rgba(234, 179, 8, 0.35)",
           }}
         />
 
@@ -116,6 +116,7 @@ export default function Home() {
             boxShadow: "0 10px 30px -5px rgba(56, 189, 248, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
             position: "relative",
             overflow: "hidden",
+            fontFamily: "Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif",
           }}
         >
           {/* 상단 포인트 컬러 바 */}
@@ -164,7 +165,7 @@ export default function Home() {
                 <span style={{ color: "#06b6d4" }}>n</span>
                 <span style={{ color: "#8b5cf6" }}>o</span>
               </span>{" "}
-              <span style={{ fontSize: "1.05rem", fontWeight: "600", color: "#0284c7" }}>Ai 에이전트 전문 강사</span>
+              <span style={{ fontSize: "1.05rem", fontWeight: "600", color: "#0284c7" }}>1인 기업 컨설턴트 전문가</span>
             </h3>
             <p style={{ fontSize: "0.92rem", color: "#475569", margin: "6px 0 0", wordBreak: "keep-all" }}>
               실무와 일상에 바로 쓰는 맞춤형 생성형 AI 활용법을 전합니다.
@@ -230,31 +231,64 @@ export default function Home() {
       <div
         style={{
           backgroundColor: "#ffffff",
-          borderRadius: "24px",
-          boxShadow: "0 8px 40px rgba(30, 58, 138, 0.15)",
-          padding: "clamp(32px, 6vw, 48px) clamp(24px, 6vw, 56px)",
+          borderRadius: "20px",
+          border: "2px solid #e0e7ff",
+          boxShadow: "0 10px 30px -5px rgba(56, 189, 248, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+          padding: "clamp(32px, 6vw, 44px) clamp(24px, 6vw, 50px)",
           width: "100%",
-          maxWidth: "720px",
+          maxWidth: "600px",
+          fontFamily: "Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        <h2
+        {/* 상단 포인트 컬러 바 (프로필과 동일하게 통일) */}
+        <div
           style={{
-            fontSize: "clamp(1.4rem, 3vw, 1.8rem)",
-            fontWeight: "800",
-            color: "#1e293b",
-            marginBottom: "24px",
-            textAlign: "center",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            height: "5px",
+            background: "linear-gradient(90deg, #e11d48, #38bdf8)",
           }}
-        >
-          무엇이 궁금하세요?
-        </h2>
+        />
+
+        <div style={{ textAlign: "center", marginBottom: "22px" }}>
+          <span
+            style={{
+              display: "inline-block",
+              backgroundColor: "#eff6ff",
+              color: "#0284c7",
+              border: "1px solid #bfdbfe",
+              fontWeight: "700",
+              fontSize: "0.82rem",
+              padding: "4px 14px",
+              borderRadius: "20px",
+              marginBottom: "8px",
+              letterSpacing: "0.5px",
+            }}
+          >
+            CONTACT
+          </span>
+          <h2
+            style={{
+              fontSize: "clamp(1.4rem, 3vw, 1.8rem)",
+              fontWeight: "800",
+              color: "#0f172a",
+              margin: "4px 0",
+            }}
+          >
+            무엇이 궁금하세요?
+          </h2>
+        </div>
 
         <form
           onSubmit={handleSubmit}
           style={{
             display: "flex",
             flexDirection: "column",
-            gap: "16px",
+            gap: "18px",
           }}
         >
           <div>
@@ -263,8 +297,8 @@ export default function Home() {
               style={{
                 display: "block",
                 marginBottom: "8px",
-                fontWeight: "600",
-                color: "#334155",
+                fontWeight: "700",
+                color: "#1e293b",
                 fontSize: "0.95rem",
               }}
             >
@@ -284,8 +318,9 @@ export default function Home() {
                 border: "1.5px solid #cbd5e1",
                 fontSize: "1rem",
                 outline: "none",
-                transition: "border-color 0.2s",
+                transition: "all 0.2s",
                 boxSizing: "border-box",
+                fontFamily: "inherit",
               }}
             />
           </div>
@@ -296,8 +331,8 @@ export default function Home() {
               style={{
                 display: "block",
                 marginBottom: "8px",
-                fontWeight: "600",
-                color: "#334155",
+                fontWeight: "700",
+                color: "#1e293b",
                 fontSize: "0.95rem",
               }}
             >
@@ -317,9 +352,10 @@ export default function Home() {
                 border: "1.5px solid #cbd5e1",
                 fontSize: "1rem",
                 outline: "none",
-                transition: "border-color 0.2s",
+                transition: "all 0.2s",
                 boxSizing: "border-box",
                 resize: "vertical",
+                fontFamily: "inherit",
               }}
             />
           </div>
@@ -328,16 +364,18 @@ export default function Home() {
             type="submit"
             disabled={isLoading}
             style={{
-              marginTop: "8px",
+              marginTop: "6px",
               padding: "14px 24px",
               borderRadius: "12px",
-              backgroundColor: isLoading ? "#94a3b8" : "#00897b",
+              backgroundColor: isLoading ? "#94a3b8" : "#0284c7",
               color: "#ffffff",
               fontSize: "1.05rem",
               fontWeight: "700",
               border: "none",
               cursor: isLoading ? "not-allowed" : "pointer",
               transition: "background-color 0.2s",
+              fontFamily: "inherit",
+              boxShadow: "0 4px 14px rgba(2, 132, 199, 0.3)",
             }}
           >
             {isLoading ? "보내는 중..." : "보내기"}
@@ -356,6 +394,7 @@ export default function Home() {
               backgroundColor: isSuccess ? "#e8f5e9" : "#ffebee",
               color: isSuccess ? "#2e7d32" : "#c62828",
               border: `1px solid ${isSuccess ? "#a5d6a7" : "#ef9a9a"}`,
+              fontFamily: "inherit",
             }}
           >
             {statusText}
