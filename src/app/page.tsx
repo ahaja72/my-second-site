@@ -68,16 +68,26 @@ export default function Home() {
         }}
       >
         <h1
-          className="font-extrabold text-center leading-tight"
+          className="font-extrabold leading-tight"
           style={{
-            fontSize: "clamp(2rem, 5vw, 3.6rem)",
+            width: "100%",
+            maxWidth: "580px",
+            fontSize: "clamp(2.2rem, 5.5vw, 3.8rem)",
             fontFamily: "Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif",
             letterSpacing: "-0.5px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "10px",
           }}
         >
-          <span style={{ color: "#800020" }}>My History</span>
-          <br />
-          <span style={{ color: "#4a2c11" }}>AI HiStory</span>
+          <div style={{ textAlign: "left", paddingLeft: "clamp(8px, 4vw, 24px)" }}>
+            <span style={{ color: "#800020" }}>My History</span>
+          </div>
+          <div style={{ textAlign: "right", paddingRight: "clamp(8px, 4vw, 24px)" }}>
+            <span style={{ color: "#4a2c11", letterSpacing: "1.5px" }}>
+              AI&nbsp;&nbsp;HiStory
+            </span>
+          </div>
         </h1>
 
         {/* 동그란 프로필 사진 */}
