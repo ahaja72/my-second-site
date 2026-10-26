@@ -109,7 +109,7 @@ export default function Home() {
         </p>
       </div>
 
-      {/* 연락하기 칸 */}
+      {/* 문의하기 칸 */}
       <div
         style={{
           backgroundColor: "#ffffff",
@@ -129,7 +129,7 @@ export default function Home() {
             textAlign: "center",
           }}
         >
-          연락하기
+          문의하기
         </h2>
 
         <form
