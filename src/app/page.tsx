@@ -154,19 +154,25 @@ export default function Home() {
                   기술 자체보다 중요한 것은 <strong>'나의 일과 삶에 어떻게 연결되는가'</strong>입니다. 공공기관부터 중소기업, 1인 창업가와 시니어까지 눈높이에 맞춘 쉽고 실천적인 AI 워크플로우를 설계해 드립니다.
                 </p>
 
-                {/* Stat Badges (Oura Style) */}
-                <div className="grid grid-cols-3 gap-3 pt-6 border-t border-[#e1dcd3]">
-                  <div className="bg-[#f7f1e8] rounded-[16px] p-4 text-center">
-                    <span className="font-serif-display text-2xl sm:text-3xl text-[#1c1b1a] block font-light">100%</span>
-                    <span className="text-[11px] sm:text-[12px] text-[#838280] uppercase tracking-wider font-medium mt-1 block">맞춤 실무 커리큘럼</span>
+                {/* Stat Badges (Oura Style - Responsive on mobile) */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-6 border-t border-[#e1dcd3] w-full">
+                  <div className="bg-[#f7f1e8] border border-[#e1dcd3]/60 rounded-[16px] p-4 text-center flex flex-col justify-center items-center">
+                    <span className="font-serif-display text-2xl sm:text-3xl text-[#1c1b1a] block font-light leading-tight">100%</span>
+                    <span className="text-[12px] text-[#4a4741] sm:text-[#838280] font-medium mt-1.5 leading-snug break-keep">
+                      맞춤 실무 커리큘럼
+                    </span>
                   </div>
-                  <div className="bg-[#f7f1e8] rounded-[16px] p-4 text-center">
-                    <span className="font-serif-display text-2xl sm:text-3xl text-[#af751b] block font-light">Direct</span>
-                    <span className="text-[11px] sm:text-[12px] text-[#838280] uppercase tracking-wider font-medium mt-1 block">즉시 적용 워크숍</span>
+                  <div className="bg-[#f7f1e8] border border-[#e1dcd3]/60 rounded-[16px] p-4 text-center flex flex-col justify-center items-center">
+                    <span className="font-serif-display text-2xl sm:text-3xl text-[#af751b] block font-light leading-tight">Direct</span>
+                    <span className="text-[12px] text-[#4a4741] sm:text-[#838280] font-medium mt-1.5 leading-snug break-keep">
+                      즉시 적용 워크숍
+                    </span>
                   </div>
-                  <div className="bg-[#f7f1e8] rounded-[16px] p-4 text-center">
-                    <span className="font-serif-display text-2xl sm:text-3xl text-[#224228] block font-light">AI+1</span>
-                    <span className="text-[11px] sm:text-[12px] text-[#838280] uppercase tracking-wider font-medium mt-1 block">1인 비즈니스 자동화</span>
+                  <div className="bg-[#f7f1e8] border border-[#e1dcd3]/60 rounded-[16px] p-4 text-center flex flex-col justify-center items-center">
+                    <span className="font-serif-display text-2xl sm:text-3xl text-[#224228] block font-light leading-tight">AI+1</span>
+                    <span className="text-[12px] text-[#4a4741] sm:text-[#838280] font-medium mt-1.5 leading-snug break-keep">
+                      1인 비즈니스 자동화
+                    </span>
                   </div>
                 </div>
               </div>
