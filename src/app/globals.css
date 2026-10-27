@@ -36,6 +36,10 @@ body {
   font-family: var(--font-oura-serif), "Editorial New", "Fraunces", "Newsreader", "Batang", serif;
 }
 
+.font-script {
+  font-family: var(--font-oura-script), "Great Vibes", "Brush Script MT", cursive;
+}
+
 /* Smooth transitions */
 button, a, input, textarea {
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);

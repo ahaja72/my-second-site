@@ -133,8 +133,10 @@ export default function Home() {
                   <span className="text-[12px] font-bold tracking-[1.5px] uppercase text-[#af751b] block mb-1">
                     FOUNDER & SPEAKER
                   </span>
-                  <h2 className="text-2xl font-bold text-[#1c1b1a]">노현희 대표</h2>
-                  <p className="text-[14px] text-[#838280] mt-1 font-medium">missno · 1인 기업 컨설턴트 전문가</p>
+                  <h2 className="font-script text-4xl sm:text-5xl text-[#2a72de] tracking-wide my-1">
+                    missno
+                  </h2>
+                  <p className="text-[14px] text-[#838280] font-medium">1인 기업 컨설턴트 전문가</p>
                 </div>
               </div>
 

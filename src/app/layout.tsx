@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Newsreader, Inter } from "next/font/google";
+import { Newsreader, Inter, Great_Vibes } from "next/font/google";
 import "./globals.css";
 
 const serifFont = Newsreader({
@@ -14,8 +14,14 @@ const sansFont = Inter({
   variable: "--font-oura-sans",
 });
 
+const scriptFont = Great_Vibes({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-oura-script",
+});
+
 export const metadata: Metadata = {
-  title: "노현희 | 1인 기업 컨설턴트 전문가 (missno)",
+  title: "missno | 1인 기업 컨설턴트 전문가",
   description: "실무와 일상에 바로 쓰는 맞춤형 생성형 AI 활용법을 전합니다.",
 };
 
@@ -25,7 +31,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className={`${serifFont.variable} ${sansFont.variable} h-full antialiased`}>
+    <html
+      lang="ko"
+      className={`${serifFont.variable} ${sansFont.variable} ${scriptFont.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
