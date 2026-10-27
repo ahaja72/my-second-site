@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --canvas: #f7f1e8;
+  --surface: #ffffff;
+  --surface-grey: #ececec;
+  --silver: #cccac7;
+  --hairline: #e1dcd3;
+  --primary: #2a72de;
+  --primary-hover: #1e5cb8;
+  --stone: #4a4741;
+  --stone-hover: #383632;
+  --ink: #1c1b1a;
+  --ash: #838280;
+  --mute: #a8a5a0;
+  --clay: #6b443d;
+  --espresso: #39221e;
+  --gold: #af751b;
+  --ochre: #bc924c;
+  --forest: #224228;
+  --olive: #5c6f5d;
+  --sage: #849671;
+  --ink-band: #000000;
+  --ink-band-soft: #19191c;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-oura-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Pretendard", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif-display {
+  font-family: var(--font-oura-serif), "Editorial New", "Fraunces", "Newsreader", "Batang", serif;
+}
+
+/* Smooth transitions */
+button, a, input, textarea {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
