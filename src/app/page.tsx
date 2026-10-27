@@ -450,6 +450,27 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* 9. FLOATING KAKAO OPEN CHAT BUTTON */}
+      <aside aria-label="카카오톡 오픈채팅 문의">
+        <a
+          href="여기에 복사한 오픈채팅방 주소 입력"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-[14px] sm:text-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.24)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
+        >
+          {/* Kakao Bubble Icon */}
+          <svg
+            className="w-5 h-5 fill-[#191919] shrink-0"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path d="M12 3c-5.523 0-10 3.582-10 8 0 2.873 1.887 5.4 4.771 6.787l-1.22 4.476a.5.5 0 0 0 .762.532l5.228-3.468c.15.011.303.018.459.018 5.523 0 10-3.582 10-8s-4.477-8-10-8z" />
+          </svg>
+          <span className="whitespace-nowrap">카카오톡으로 문의하기</span>
+        </a>
+      </aside>
     </div>
   );
 }
