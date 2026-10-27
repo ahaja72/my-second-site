@@ -133,7 +133,13 @@ export default function Home() {
                   <span className="text-[12px] font-bold tracking-[1.5px] uppercase text-[#af751b] block mb-1">
                     FOUNDER & SPEAKER
                   </span>
-                  <h2 className="font-script text-4xl sm:text-5xl text-[#2a72de] tracking-wide my-1">
+                  <h2
+                    className="font-script text-5xl sm:text-6xl text-[#2a72de] tracking-wide my-1 font-bold"
+                    style={{
+                      textShadow: "0 0 1px #2a72de",
+                      WebkitTextStroke: "0.5px #2a72de",
+                    }}
+                  >
                     missno
                   </h2>
                   <p className="text-[14px] text-[#838280] font-medium">1인 기업 컨설턴트 전문가</p>
