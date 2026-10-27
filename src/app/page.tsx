@@ -8,6 +8,7 @@ export default function Home() {
   const [statusText, setStatusText] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isKakaoMenuOpen, setIsKakaoMenuOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -451,13 +452,66 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* 9. FLOATING KAKAO OPEN CHAT BUTTON */}
-      <aside aria-label="카카오톡 오픈채팅 문의">
-        <a
-          href="https://open.kakao.com/o/scnBCmUi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-[14px] sm:text-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.24)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
+      {/* 9. FLOATING KAKAO BUTTON WITH CHAT & CHANNEL LINKS */}
+      <aside aria-label="카카오톡 채널 및 채팅 문의" className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        {/* Sub-menu with individual Kakao links */}
+        {isKakaoMenuOpen && (
+          <div className="mb-3 flex flex-col gap-2 bg-white/95 backdrop-blur-sm border border-[#e1dcd3] p-2.5 rounded-[20px] shadow-[0_8px_30px_rgba(0,0,0,0.15)] animate-in fade-in slide-in-from-bottom-2 duration-200 min-w-[210px]">
+            {/* 채팅 URL */}
+            <a
+              href="http://pf.kakao.com/_eQxbWX/chat"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-3.5 py-2.5 rounded-[14px] hover:bg-[#FEE500]/25 transition-colors group"
+            >
+              <span className="w-8 h-8 rounded-full bg-[#FEE500] flex items-center justify-center text-[#191919] font-bold text-xs shrink-0 shadow-xs">
+                💬
+              </span>
+              <div className="flex flex-col">
+                <span className="text-[13px] font-bold text-[#191919] group-hover:text-black">1:1 채팅 문의</span>
+                <span className="text-[11px] text-[#838280]">실시간 상담 및 채팅 URL</span>
+              </div>
+            </a>
+
+            {/* 채널 홈 URL */}
+            <a
+              href="http://pf.kakao.com/_eQxbWX"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-3.5 py-2.5 rounded-[14px] hover:bg-[#FEE500]/25 transition-colors group"
+            >
+              <span className="w-8 h-8 rounded-full bg-[#FEE500] flex items-center justify-center text-[#191919] font-bold text-xs shrink-0 shadow-xs">
+                🏠
+              </span>
+              <div className="flex flex-col">
+                <span className="text-[13px] font-bold text-[#191919] group-hover:text-black">카카오 채널 홈</span>
+                <span className="text-[11px] text-[#838280]">소식 확인 및 채널 URL</span>
+              </div>
+            </a>
+
+            {/* 친구추가 URL */}
+            <a
+              href="http://pf.kakao.com/_eQxbWX/friend"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 px-3.5 py-2.5 rounded-[14px] hover:bg-[#FEE500]/25 transition-colors group border-t border-[#f7f1e8] pt-2.5"
+            >
+              <span className="w-8 h-8 rounded-full bg-[#FEE500] flex items-center justify-center text-[#191919] font-bold text-xs shrink-0 shadow-xs">
+                ➕
+              </span>
+              <div className="flex flex-col">
+                <span className="text-[13px] font-bold text-[#191919] group-hover:text-black">카카오 친구추가</span>
+                <span className="text-[11px] text-[#838280]">소식 받기 및 친구추가 URL</span>
+              </div>
+            </a>
+          </div>
+        )}
+
+        {/* Main Floating Trigger Button */}
+        <button
+          type="button"
+          onClick={() => setIsKakaoMenuOpen(!isKakaoMenuOpen)}
+          className="flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-[14px] sm:text-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.24)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
         >
           {/* Kakao Bubble Icon */}
           <svg
@@ -468,8 +522,10 @@ export default function Home() {
           >
             <path d="M12 3c-5.523 0-10 3.582-10 8 0 2.873 1.887 5.4 4.771 6.787l-1.22 4.476a.5.5 0 0 0 .762.532l5.228-3.468c.15.011.303.018.459.018 5.523 0 10-3.582 10-8s-4.477-8-10-8z" />
           </svg>
-          <span className="whitespace-nowrap">카카오톡으로 문의하기</span>
-        </a>
+          <span className="whitespace-nowrap">
+            {isKakaoMenuOpen ? "문의 닫기 ✕" : "카카오톡으로 문의하기"}
+          </span>
+        </button>
       </aside>
     </div>
   );
