@@ -186,8 +186,8 @@ export default function Home() {
             <span className="text-[12px] font-bold tracking-[1.5px] uppercase text-[#6b443d] block mb-2">
               CORE DOMAINS
             </span>
-            <h2 className="font-serif-display text-3xl sm:text-4xl md:text-5xl font-light text-[#1c1b1a]">
-              주요 강의 및 컨설팅 영역
+            <h2 className="font-serif-display text-3xl sm:text-4xl md:text-5xl font-light text-[#1c1b1a] leading-snug">
+              주요 강의<br />컨설팅 영역
             </h2>
           </div>
 
