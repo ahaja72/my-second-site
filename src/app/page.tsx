@@ -48,7 +48,7 @@ export default function Home() {
       {/* 1. ANNOUNCEMENT BAR */}
       <div className="w-full bg-[#f7f1e8] border-b border-[#e1dcd3] py-2.5 px-4 text-center">
         <p className="text-[11px] md:text-[12px] font-bold tracking-[1.5px] uppercase text-[#4a4741]">
-          ✦ 생성형 AI 실무 컨설팅 & 1인 기업 맞춤형 워크숍 진행 ✦
+          생성형 AI 실무 컨설팅 & 1인 기업 맞춤형 워크숍 진행
         </p>
       </div>
 
