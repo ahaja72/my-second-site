@@ -454,7 +454,7 @@ export default function Home() {
       {/* 9. FLOATING KAKAO OPEN CHAT BUTTON */}
       <aside aria-label="카카오톡 오픈채팅 문의">
         <a
-          href="여기에 복사한 오픈채팅방 주소 입력"
+          href="https://open.kakao.com/o/scnBCmUi"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-[14px] sm:text-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.24)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
