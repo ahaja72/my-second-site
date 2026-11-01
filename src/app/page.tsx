@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -55,10 +56,17 @@ export default function Home() {
       {/* 2. NAVIGATION BAR */}
       <nav className="w-full bg-[#f7f1e8] border-b border-[#e1dcd3] sticky top-0 z-50 backdrop-blur-md bg-opacity-90">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <span className="font-serif-display text-2xl md:text-3xl font-normal tracking-tight text-[#1c1b1a]">
-              missno
-            </span>
+          <div className="flex items-center gap-3">
+            <a href="#" className="flex items-center">
+              <Image
+                src="/missno-logo.png"
+                alt="missno 로고"
+                width={120}
+                height={50}
+                className="h-9 w-auto object-contain hover:opacity-90 transition-opacity"
+                priority
+              />
+            </a>
             <span className="hidden sm:inline-block text-[11px] tracking-wider uppercase px-2.5 py-0.5 rounded-full bg-[#e1dcd3]/60 text-[#4a4741] font-medium">
               Consulting
             </span>
@@ -93,7 +101,17 @@ export default function Home() {
           </h1>
 
           <p className="max-w-2xl mx-auto text-[17px] sm:text-[19px] md:text-[21px] text-[#4a4741] font-normal leading-[1.7] mb-12">
-            개인&amp;기업 컨설턴트 <span className="font-script text-3xl sm:text-4xl text-[#2a72de] font-bold inline-block mx-1">missno</span>입니다.
+            개인&amp;기업 컨설턴트{" "}
+            <span className="inline-flex items-center align-middle mx-1">
+              <Image
+                src="/missno-logo.png"
+                alt="missno 로고"
+                width={100}
+                height={42}
+                className="h-8 sm:h-9 w-auto inline-block drop-shadow-xs"
+              />
+            </span>
+            입니다.
             <br />
             실무와 일상에 바로 쓸 수 있는 맞춤형 생성형 AI 활용법과 비즈니스 성장을 전합니다.
           </p>
@@ -131,20 +149,20 @@ export default function Home() {
                     className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover border-4 border-[#ffffff] shadow-md"
                   />
                 </div>
-                <div className="mt-6 text-center">
-                  <span className="text-[12px] font-bold tracking-[1.5px] uppercase text-[#af751b] block mb-1">
+                <div className="mt-6 text-center flex flex-col items-center">
+                  <span className="text-[12px] font-bold tracking-[1.5px] uppercase text-[#af751b] block mb-2">
                     FOUNDER & SPEAKER
                   </span>
-                  <h2
-                    className="font-script text-6xl sm:text-7xl text-[#2a72de] tracking-wider my-2 font-normal select-none"
-                    style={{
-                      letterSpacing: "0.04em",
-                      filter: "drop-shadow(0 2px 8px rgba(42, 114, 222, 0.15))",
-                    }}
-                  >
-                    missno
-                  </h2>
-                  <p className="text-[14px] text-[#838280] font-medium tracking-wide">1인 기업 컨설턴트 전문가</p>
+                  <div className="my-1.5 flex justify-center">
+                    <Image
+                      src="/missno-logo.png"
+                      alt="missno 로고"
+                      width={180}
+                      height={76}
+                      className="h-14 sm:h-16 w-auto object-contain drop-shadow-md"
+                    />
+                  </div>
+                  <p className="text-[14px] text-[#838280] font-medium tracking-wide mt-1">1인 기업 컨설턴트 전문가</p>
                 </div>
               </div>
 
