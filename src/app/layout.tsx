@@ -23,6 +23,12 @@ const scriptFont = Great_Vibes({
 export const metadata: Metadata = {
   title: "missno | 1인 기업 컨설턴트 전문가",
   description: "실무와 일상에 바로 쓰는 맞춤형 생성형 AI 활용법을 전합니다.",
+  verification: {
+    google: "pJZGK9iisNnJyftLW5hz5liNiJL0s-70GXaU9U1awcg",
+    other: {
+      "naver-site-verification": "8f5dcfc69deb9a12d17b827253809d12892669e5",
+    },
+  },
 };
 
 export default function RootLayout({
