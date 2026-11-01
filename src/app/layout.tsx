@@ -21,8 +21,31 @@ const scriptFont = Great_Vibes({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://missno.vercel.app"),
   title: "missno | 1인 기업 컨설턴트 전문가",
   description: "실무와 일상에 바로 쓰는 맞춤형 생성형 AI 활용법을 전합니다.",
+  openGraph: {
+    title: "Subtle Wisdom.Powerful AI Action",
+    description: "실무와 일상에 바로 쓸수있는 맞춤횽 생성형 AI 활용법과 비지니스 성장을 전합니다",
+    url: "https://missno.vercel.app",
+    siteName: "missno",
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 800,
+        height: 800,
+        alt: "missno 프로필",
+      },
+    ],
+    locale: "ko_KR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Subtle Wisdom.Powerful AI Action",
+    description: "실무와 일상에 바로 쓸수있는 맞춤횽 생성형 AI 활용법과 비지니스 성장을 전합니다",
+    images: ["/profile.jpg"],
+  },
   verification: {
     google: "pJZGK9iisNnJyftLW5hz5liNiJL0s-70GXaU9U1awcg",
     other: {
