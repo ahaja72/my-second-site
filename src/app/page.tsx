@@ -158,8 +158,23 @@ export default function Home() {
                 <h3 className="font-serif-display text-2xl sm:text-3xl font-light text-[#1c1b1a] mb-4 leading-snug">
                   복잡하고 어려운 인공지능을 누구나 손에 쥐는 실무 무기로 만듭니다.
                 </h3>
-                <p className="text-[#4a4741] text-[16px] leading-[1.7] mb-6">
-                  기술 자체보다 중요한 것은 <strong>'나의 일과 삶에 어떻게 연결되는가'</strong>입니다. 공공기관부터 중소기업, 1인 창업가와 시니어까지 눈높이에 맞춘 쉽고 실천적인 AI 워크플로우를 설계해 드립니다.
+                {/* Philosophy Highlight Quote Box */}
+                <div className="relative my-4 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#2a72de]/8 via-[#f7f1e8] to-[#ffffff] border-l-4 border-[#2a72de] shadow-xs">
+                  <p className="text-[13px] sm:text-[14px] font-semibold text-[#2a72de] tracking-wide mb-1 flex items-center gap-1.5">
+                    <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#2a72de]"></span>
+                    Core Philosophy
+                  </p>
+                  <p className="text-[17px] sm:text-[19px] font-semibold text-[#1c1b1a] leading-snug break-keep">
+                    &ldquo;기술 자체보다 중요한 것은<br className="sm:hidden" />
+                    <span className="text-[#2a72de] px-1.5 py-0.5 rounded bg-[#2a72de]/10 underline decoration-[#2a72de]/40 decoration-2 underline-offset-4 font-bold inline-block my-0.5">
+                      &apos;나의 일과 삶에 어떻게 연결되는가&apos;
+                    </span>
+                    입니다.&rdquo;
+                  </p>
+                </div>
+
+                <p className="text-[#4a4741] text-[15px] sm:text-[16px] leading-[1.7] mb-6 break-keep">
+                  공공기관부터 중소기업, 1인 창업가와 시니어까지 눈높이에 맞춘 쉽고 실천적인 AI 워크플로우를 설계해 드립니다.
                 </p>
 
                 {/* Stat Badges (Oura Style - Responsive on mobile) */}
