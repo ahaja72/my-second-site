@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Newsreader, Inter, Great_Vibes } from "next/font/google";
+import { Newsreader, Inter, Alex_Brush } from "next/font/google";
 import "./globals.css";
 
 const serifFont = Newsreader({
@@ -14,7 +14,7 @@ const sansFont = Inter({
   variable: "--font-oura-sans",
 });
 
-const scriptFont = Great_Vibes({
+const scriptFont = Alex_Brush({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-oura-script",

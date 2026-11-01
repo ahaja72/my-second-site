@@ -37,7 +37,7 @@ body {
 }
 
 .font-script {
-  font-family: var(--font-oura-script), "Great Vibes", "Brush Script MT", cursive;
+  font-family: var(--font-oura-script), "Alex Brush", "Great Vibes", cursive;
 }
 
 /* Smooth transitions */

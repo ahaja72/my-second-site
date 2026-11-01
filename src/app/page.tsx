@@ -136,15 +136,15 @@ export default function Home() {
                     FOUNDER & SPEAKER
                   </span>
                   <h2
-                    className="font-script text-5xl sm:text-6xl text-[#2a72de] tracking-wide my-1 font-bold"
+                    className="font-script text-6xl sm:text-7xl text-[#2a72de] tracking-wider my-2 font-normal select-none"
                     style={{
-                      textShadow: "0 0 1px #2a72de",
-                      WebkitTextStroke: "0.5px #2a72de",
+                      letterSpacing: "0.04em",
+                      filter: "drop-shadow(0 2px 8px rgba(42, 114, 222, 0.15))",
                     }}
                   >
                     missno
                   </h2>
-                  <p className="text-[14px] text-[#838280] font-medium">1인 기업 컨설턴트 전문가</p>
+                  <p className="text-[14px] text-[#838280] font-medium tracking-wide">1인 기업 컨설턴트 전문가</p>
                 </div>
               </div>
 
