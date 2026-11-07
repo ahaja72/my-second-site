@@ -82,7 +82,7 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#2a72de] hover:bg-[#1e5cb8] text-white text-[14px] md:text-[15px] font-semibold shadow-sm transition-all hover:shadow-md"
+            className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#2a72de] hover:bg-[#1e5cb8] text-white text-[14px] md:text-[15px] font-semibold shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 active:scale-95"
           >
             문의하기
           </a>
@@ -110,13 +110,13 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
               href="#contact"
-              className="px-8 py-3.5 rounded-full bg-[#2a72de] hover:bg-[#1e5cb8] text-white text-[16px] font-semibold shadow-sm hover:shadow-lg transition-all"
+              className="px-8 py-3.5 rounded-full bg-[#2a72de] hover:bg-[#1e5cb8] text-white text-[16px] font-semibold shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               컨설팅 / 특강 문의
             </a>
             <a
               href="#curriculum"
-              className="px-8 py-3.5 rounded-full bg-[#f7f1e8] hover:bg-[#eae3d5] text-[#4a4741] border border-[#4a4741] text-[16px] font-semibold transition-all"
+              className="px-8 py-3.5 rounded-full bg-[#f7f1e8] hover:bg-[#eae3d5] text-[#4a4741] border border-[#4a4741] text-[16px] font-semibold transition-all duration-300 hover:scale-105 active:scale-95"
             >
               주요 강의 분야 보기
             </a>
@@ -431,7 +431,7 @@ export default function Home() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full py-4 rounded-full bg-[#2a72de] hover:bg-[#1e5cb8] text-white text-[16px] font-semibold tracking-wide shadow-sm hover:shadow-md transition-all disabled:bg-[#cccac7] disabled:cursor-not-allowed"
+                className="w-full py-4 rounded-full bg-[#2a72de] hover:bg-[#1e5cb8] text-white text-[16px] font-semibold tracking-wide shadow-sm hover:shadow-md transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] disabled:bg-[#cccac7] disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 {isLoading ? "전송 중입니다..." : "문의 메시지 보내기"}
               </button>
@@ -549,7 +549,7 @@ export default function Home() {
         <button
           type="button"
           onClick={() => setIsKakaoMenuOpen(!isKakaoMenuOpen)}
-          className="flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-[14px] sm:text-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.24)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
+          className="flex items-center gap-2.5 px-5 py-3.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-[14px] sm:text-[15px] shadow-[0_4px_20px_rgba(0,0,0,0.18)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.24)] hover:scale-105 hover:-translate-y-0.5 active:scale-95 active:translate-y-0 transition-all duration-300 cursor-pointer"
         >
           {/* Kakao Bubble Icon */}
           <svg
