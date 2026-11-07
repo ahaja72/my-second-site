@@ -62,9 +62,9 @@ export default function Home() {
               <Image
                 src="/missno-logo.png"
                 alt="missno 로고"
-                width={120}
-                height={50}
-                className="h-9 w-auto object-contain hover:opacity-90 transition-opacity"
+                width={48}
+                height={48}
+                className="h-10 w-10 sm:h-11 sm:w-11 rounded-xl object-contain hover:opacity-90 transition-opacity"
                 priority
               />
             </a>
@@ -103,13 +103,13 @@ export default function Home() {
 
           <p className="max-w-2xl mx-auto text-[17px] sm:text-[19px] md:text-[21px] text-[#4a4741] font-normal leading-[1.7] mb-12">
             개인&amp;기업 컨설턴트{" "}
-            <span className="inline-flex items-center align-middle mx-1">
+            <span className="inline-flex items-center align-middle mx-1.5">
               <Image
                 src="/missno-logo.png"
                 alt="missno 로고"
-                width={100}
-                height={42}
-                className="h-8 sm:h-9 w-auto inline-block drop-shadow-xs"
+                width={36}
+                height={36}
+                className="h-8 w-8 sm:h-9 sm:w-9 rounded-lg inline-block drop-shadow-xs object-contain"
               />
             </span>
             입니다.
@@ -154,13 +154,13 @@ export default function Home() {
                   <span className="text-[12px] font-bold tracking-[1.5px] uppercase text-[#af751b] block mb-2">
                     FOUNDER & SPEAKER
                   </span>
-                  <div className="my-1.5 flex justify-center">
+                  <div className="my-2 flex justify-center">
                     <Image
                       src="/missno-logo.png"
                       alt="missno 로고"
-                      width={180}
-                      height={76}
-                      className="h-14 sm:h-16 w-auto object-contain drop-shadow-md"
+                      width={80}
+                      height={80}
+                      className="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-contain drop-shadow-md"
                     />
                   </div>
                   <p className="text-[14px] text-[#838280] font-medium tracking-wide mt-1">1인 기업 컨설턴트 전문가</p>
