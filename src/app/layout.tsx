@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Newsreader, Inter, Alex_Brush } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const serifFont = Newsreader({
@@ -65,6 +66,7 @@ export default function RootLayout({
       className={`${serifFont.variable} ${sansFont.variable} ${scriptFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
+      <GoogleAnalytics gaId="G-KQ2JL8P1XD" />
     </html>
   );
 }
