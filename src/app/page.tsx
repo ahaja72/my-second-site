@@ -102,17 +102,7 @@ export default function Home() {
           </h1>
 
           <p className="max-w-2xl mx-auto text-[17px] sm:text-[19px] md:text-[21px] text-[#4a4741] font-normal leading-[1.7] mb-12">
-            개인&amp;기업 컨설턴트{" "}
-            <span className="inline-flex items-center align-middle mx-1.5">
-              <Image
-                src="/missno-logo.png"
-                alt="missno 로고"
-                width={36}
-                height={36}
-                className="h-8 w-8 sm:h-9 sm:w-9 rounded-lg inline-block drop-shadow-xs object-contain"
-              />
-            </span>
-            입니다.
+            개인&amp;기업 컨설턴트 <span className="font-bold text-black">MISSNO</span>입니다.
             <br />
             실무와 일상에 바로 쓸 수 있는 맞춤형 생성형 AI 활용법과 비즈니스 성장을 전합니다.
           </p>
