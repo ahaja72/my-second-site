@@ -64,7 +64,7 @@ export default function Home() {
                 alt="missno 로고"
                 width={48}
                 height={48}
-                className="h-10 w-10 sm:h-11 sm:w-11 rounded-xl object-contain hover:opacity-90 transition-opacity"
+                className="h-10 w-10 sm:h-11 sm:w-11 rounded-xl object-contain transition-transform duration-300 hover:scale-105"
                 priority
               />
             </a>
@@ -150,7 +150,7 @@ export default function Home() {
                       alt="missno 로고"
                       width={80}
                       height={80}
-                      className="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-contain drop-shadow-md"
+                      className="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-contain drop-shadow-md transition-transform duration-300 hover:scale-105"
                     />
                   </div>
                   <p className="text-[14px] text-[#838280] font-medium tracking-wide mt-1">1인 기업 컨설턴트 전문가</p>
