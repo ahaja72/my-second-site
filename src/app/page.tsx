@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -463,25 +464,38 @@ export default function Home() {
 
       {/* 8. FOOTER (Oura Ink Band Soft World) */}
       <footer className="w-full bg-[#19191c] text-[#a8a5a0] border-t border-[#2a2927] py-14 px-6">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-          <div className="text-center md:text-left">
-            <span className="font-serif-display text-2xl text-[#ffffff] tracking-tight block mb-1">
-              missno
-            </span>
-            <p className="text-[13px] text-[#838280]">
-              노현희 1인 기업 컨설턴트 전문가 · 맞춤형 생성형 AI 비즈니스 솔루션
+        <div className="max-w-5xl mx-auto flex flex-col gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="text-center md:text-left">
+              <span className="font-serif-display text-2xl text-[#ffffff] tracking-tight block mb-1">
+                missno
+              </span>
+              <p className="text-[13px] text-[#838280]">
+                노현희 1인 기업 컨설턴트 전문가 · 맞춤형 생성형 AI 비즈니스 솔루션
+              </p>
+            </div>
+
+            <div className="flex items-center gap-6 text-[13px]">
+              <a href="#about" className="hover:text-white transition-colors">소개</a>
+              <a href="#curriculum" className="hover:text-white transition-colors">강의 분야</a>
+              <a href="#credentials" className="hover:text-white transition-colors">활동 이력</a>
+              <a href="#contact" className="hover:text-white transition-colors">문의하기</a>
+            </div>
+          </div>
+
+          <div className="pt-6 border-t border-[#2a2927] flex flex-col sm:flex-row justify-between items-center gap-3 text-[12px] text-[#838280]">
+            <p className="text-center sm:text-left">
+              이 사이트는 방문 통계를 보려고 구글 애널리틱스를 써요.
             </p>
-          </div>
-
-          <div className="flex items-center gap-6 text-[13px]">
-            <a href="#about" className="hover:text-white transition-colors">소개</a>
-            <a href="#curriculum" className="hover:text-white transition-colors">강의 분야</a>
-            <a href="#credentials" className="hover:text-white transition-colors">활동 이력</a>
-            <a href="#contact" className="hover:text-white transition-colors">문의하기</a>
-          </div>
-
-          <div className="text-[12px] text-[#838280]">
-            © {new Date().getFullYear()} missno. All rights reserved.
+            <div className="flex items-center gap-4">
+              <Link
+                href="/privacy"
+                className="underline underline-offset-4 hover:text-white transition-colors"
+              >
+                개인정보처리방침
+              </Link>
+              <span>© {new Date().getFullYear()} missno. All rights reserved.</span>
+            </div>
           </div>
         </div>
       </footer>
