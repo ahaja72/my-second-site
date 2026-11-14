@@ -73,11 +73,31 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="hidden md:flex items-center gap-8 text-[14px] text-[#4a4741] font-medium">
-            <a href="#about" className="hover:text-[#1c1b1a] transition-colors">소개</a>
-            <a href="#curriculum" className="hover:text-[#1c1b1a] transition-colors">주요 분야</a>
-            <a href="#credentials" className="hover:text-[#1c1b1a] transition-colors">활동 이력</a>
-            <a href="#contact" className="hover:text-[#1c1b1a] transition-colors">문의하기</a>
+          <div className="hidden md:flex items-center gap-2 text-[14px] text-[#4a4741] font-medium bg-[#ffffff]/60 p-1 rounded-full border border-[#e1dcd3]/80">
+            <a
+              href="#about"
+              className="px-4 py-1.5 rounded-full hover:bg-white hover:text-[#1c1b1a] hover:shadow-xs transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+              소개
+            </a>
+            <a
+              href="#curriculum"
+              className="px-4 py-1.5 rounded-full hover:bg-white hover:text-[#1c1b1a] hover:shadow-xs transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+              주요 분야
+            </a>
+            <a
+              href="#credentials"
+              className="px-4 py-1.5 rounded-full hover:bg-white hover:text-[#1c1b1a] hover:shadow-xs transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+              활동 이력
+            </a>
+            <a
+              href="#contact"
+              className="px-4 py-1.5 rounded-full hover:bg-white hover:text-[#1c1b1a] hover:shadow-xs transition-all duration-200 hover:scale-105 active:scale-95"
+            >
+              문의하기
+            </a>
           </div>
 
           <a
