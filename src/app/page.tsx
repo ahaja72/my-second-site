@@ -73,28 +73,28 @@ export default function Home() {
             </span>
           </div>
 
-          <div className="hidden md:flex items-center gap-2 text-[14px] text-[#4a4741] font-medium bg-[#ffffff]/60 p-1 rounded-full border border-[#e1dcd3]/80">
+          <div className="hidden md:flex items-center gap-3 text-[14px]">
             <a
               href="#about"
-              className="px-4 py-1.5 rounded-full hover:bg-white hover:text-[#1c1b1a] hover:shadow-xs transition-all duration-200 hover:scale-105 active:scale-95"
+              className="px-4 py-2 rounded-full bg-white text-[#1c1b1a] font-semibold border border-[#d8d2c7] shadow-xs hover:border-[#2a72de] hover:text-[#2a72de] hover:shadow-sm hover:scale-105 active:scale-95 transition-all duration-200"
             >
               소개
             </a>
             <a
               href="#curriculum"
-              className="px-4 py-1.5 rounded-full hover:bg-white hover:text-[#1c1b1a] hover:shadow-xs transition-all duration-200 hover:scale-105 active:scale-95"
+              className="px-4 py-2 rounded-full bg-white text-[#1c1b1a] font-semibold border border-[#d8d2c7] shadow-xs hover:border-[#2a72de] hover:text-[#2a72de] hover:shadow-sm hover:scale-105 active:scale-95 transition-all duration-200"
             >
               주요 분야
             </a>
             <a
               href="#credentials"
-              className="px-4 py-1.5 rounded-full hover:bg-white hover:text-[#1c1b1a] hover:shadow-xs transition-all duration-200 hover:scale-105 active:scale-95"
+              className="px-4 py-2 rounded-full bg-white text-[#1c1b1a] font-semibold border border-[#d8d2c7] shadow-xs hover:border-[#2a72de] hover:text-[#2a72de] hover:shadow-sm hover:scale-105 active:scale-95 transition-all duration-200"
             >
               활동 이력
             </a>
             <a
               href="#contact"
-              className="px-4 py-1.5 rounded-full hover:bg-white hover:text-[#1c1b1a] hover:shadow-xs transition-all duration-200 hover:scale-105 active:scale-95"
+              className="px-4 py-2 rounded-full bg-white text-[#1c1b1a] font-semibold border border-[#d8d2c7] shadow-xs hover:border-[#2a72de] hover:text-[#2a72de] hover:shadow-sm hover:scale-105 active:scale-95 transition-all duration-200"
             >
               문의하기
             </a>
