@@ -144,15 +144,6 @@ export default function Home() {
                   <span className="text-[12px] font-bold tracking-[1.5px] uppercase text-[#af751b] block mb-2">
                     FOUNDER & SPEAKER
                   </span>
-                  <div className="my-2 flex justify-center">
-                    <Image
-                      src="/missno-logo.png"
-                      alt="missno 로고"
-                      width={80}
-                      height={80}
-                      className="h-16 w-16 sm:h-20 sm:w-20 rounded-2xl object-contain drop-shadow-md transition-transform duration-300 hover:scale-105"
-                    />
-                  </div>
                   <p className="text-[14px] text-[#838280] font-medium tracking-wide mt-1">1인 기업 컨설턴트 전문가</p>
                 </div>
               </div>
